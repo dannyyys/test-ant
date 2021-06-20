@@ -10,18 +10,18 @@ export default function Home() {
       style={{
         background: "#F8FAF8",
         height: "100vh",
-        padding: "10vh",
+        paddingTop: "10vh",
       }}
     >
-      <Space size="medium" direction="vertical" align="center">
+      <Space size="large" direction="vertical" align="center">
         <Title>TheAroidHouse</Title>
         <Landing />
-        <Title level={5}>We try to make gardening simple</Title>
+        <Text>We try to make gardening simple</Text>
         <Button
           type="default"
           style={{
             background: "#FFBA00",
-            borderColor: "",
+
             borderRadius: "10px",
           }}
         >
