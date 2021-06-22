@@ -2,6 +2,7 @@ import { Button, Space, DatePicker, Card, Row, Col, Typography } from "antd";
 import { CiCircleFilled } from "@ant-design/icons";
 import Landing from "../components/Landing";
 import Link from "next/link";
+import { BigButton } from "../components/button/BigButton";
 
 export default function Home() {
   const { Title, Text } = Typography;
@@ -11,7 +12,7 @@ export default function Home() {
       style={{
         background: "#F8FAF8",
         height: "100vh",
-        paddingTop: "10vh",
+        paddingTop: "15vh",
       }}
     >
       <Space size="large" direction="vertical" align="center">
@@ -23,18 +24,7 @@ export default function Home() {
           We try to make gardening simple
         </Text>
         <Link href="/shop" passHref>
-          <Button
-            type="default"
-            style={{
-              background: "#FFBA00",
-              borderRadius: "10px",
-              fontSize: "24px",
-              height: "40px",
-              width: "100px",
-            }}
-          >
-            Shop
-          </Button>
+          <BigButton name={"Shop now"} />
         </Link>
       </Space>
     </div>
