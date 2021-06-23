@@ -14,7 +14,7 @@ export const BigButton = React.forwardRef(function BigButton(props, ref) {
           borderRadius: "10px",
           fontSize: "24px",
           height: "40px",
-          width: "25vw",
+
           outline: "none",
           color: "#F8FAF8",
         }}
