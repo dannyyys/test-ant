@@ -11,21 +11,7 @@ const contentStyle = {
 
 export const ImageCarousel = ({ images }) => {
   return (
-    <Carousel style={{ width: "50vw" }} autoplay>
-      {/* <div>
-        <Image width={100} src={images[0]} />
-      </div>
-
-      <div>
-        <Image width={100} src={images[1]} />
-      </div>
-      <div>
-        <Image width={100} src={images[2]} />
-      </div>
-      <div>
-        <Image width={100} src={images[3]} />
-      </div> */}
-
+    <Carousel style={{ width: "90vw" }} autoplay>
       {images.map((image, i) => {
         return (
           <div key={i}>
@@ -33,18 +19,6 @@ export const ImageCarousel = ({ images }) => {
           </div>
         );
       })}
-      {/* <div>
-        <h3 style={contentStyle}>1</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>2</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>3</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>4</h3>
-      </div> */}
     </Carousel>
   );
 };
