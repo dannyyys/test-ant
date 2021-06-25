@@ -62,6 +62,7 @@ class PicturesWall extends React.Component {
   handlePreview = async (file) => {
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj);
+      console.log(await getBase64(file.originFileObj));
     }
 
     this.setState({
@@ -88,7 +89,7 @@ class PicturesWall extends React.Component {
     return (
       <>
         <Upload
-          //   action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+          action="https://localhost:8000/upload"
           listType="picture-card"
           fileList={fileList}
           onPreview={this.handlePreview}
