@@ -1,5 +1,4 @@
 import Lottie from "react-lottie-player";
-import { Row } from "antd";
 import landingLottie from "../public/landing_lottie.json";
 
 export default function Landing(props) {
